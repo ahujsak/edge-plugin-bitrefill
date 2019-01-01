@@ -59,7 +59,7 @@ StartParagraph.propTypes = {
 
 class StartScene extends React.Component {
   UNSAFE_componentWillMount () {
-    ui.title('Buy with Simplex')
+    ui.title('Buy with Bitrefill')
     window.scrollTo(0, 0)
     window.localStorage.removeItem('last_crypto_amount')
     window.localStorage.removeItem('last_fiat_amount')
