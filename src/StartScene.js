@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { withStyles } from 'material-ui/styles'
-import Divider from 'material-ui/Divider'
-import Typography from 'material-ui/Typography'
-
 import './inline.css'
 
-import { ui } from 'edge-libplugin'
 import { EdgeButton, SupportLink } from './components'
+
+import Divider from 'material-ui/Divider'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Typography from 'material-ui/Typography'
+import { ui } from 'edge-libplugin'
+import { withStyles } from 'material-ui/styles'
 
 const startStyles = (theme) => ({
   container: {
@@ -58,7 +58,7 @@ StartParagraph.propTypes = {
 }
 
 class StartScene extends React.Component {
-  componentWillMount () {
+  UNSAFE_componentWillMount () {
     ui.title('Buy with Simplex')
     window.scrollTo(0, 0)
     window.localStorage.removeItem('last_crypto_amount')
@@ -78,9 +78,9 @@ class StartScene extends React.Component {
           <div className="iconLogo" />
         </div>
         <div>
-          <StartHeader text="Simplex" classes={classes} />
+          <StartHeader text="Birefill" classes={classes} />
           <StartParagraph classes={classes}>
-            Simplex is an Edge Wallet bank card processing partner. It is the
+            Bitrefill is here  is an Edge Wallet bank card processing partner. It is the
             service which allows you to purchase Bitcoin, Bitcoin Cash,
             Ethereum, Litecoin and Ripple/XRP safely and quickly in just a few
             short minutes.

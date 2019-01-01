@@ -1,18 +1,19 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import { withStyles } from 'material-ui/styles'
-import Button from 'material-ui/Button'
-import Typography from 'material-ui/Typography'
-import Grid from 'material-ui/Grid'
-import Drawer from 'material-ui/Drawer'
 import Dialog, {
   DialogContent,
   DialogContentText,
   DialogTitle
 } from 'material-ui/Dialog'
-import { CircularProgress } from 'material-ui/Progress'
 import { formatRate, formatStatus } from './utils'
+
+import Button from 'material-ui/Button'
+import { CircularProgress } from 'material-ui/Progress'
+import Drawer from 'material-ui/Drawer'
+import Grid from 'material-ui/Grid'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Typography from 'material-ui/Typography'
 import moment from 'moment'
+import { withStyles } from 'material-ui/styles'
 
 const limitStyles = theme => ({
   p: {
@@ -101,7 +102,7 @@ const powerThemes = (theme) => ({
 export const PoweredBy = withStyles(powerThemes)((props) => {
   return (
     <Typography component="p" className={props.classes.p}>
-      Powered by Simplex
+      Powered by Bitrefill
     </Typography>
   )
 })
