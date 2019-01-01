@@ -1,7 +1,7 @@
 {
-  "pluginId": "co.edgesecure.simplex",
-  "name": "Simplex",
-  "subtitle": "Buy crypto with your credit card.",
+  "pluginId": "co.edgesecure.bitrefill",
+  "name": "Bitrefill",
+  "subtitle": "Live On Crypto.",
   "provider": "Edge Secure",
   "iconUrl": "https://airbitz.co/static/simplex.png",
   "environment": {
